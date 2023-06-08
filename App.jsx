@@ -7,7 +7,7 @@ const App = () => {
 
       <View style={styles.container}>
         <Text style={styles.title}>
-          Hola mundo desde React-Native
+          Recetario de Cocina
         </Text>
       </View>
 

@@ -1,0 +1,195 @@
+[
+    {
+        "name": "Pepperoni Pizza",
+        "id": 1,
+        "image": "https://images.news18.com/ibnlive/uploads/2021/01/1610716314_untitled-design-2021-01-15t184025.049.jpg?im=FitAndFill,width=1200,height=1200",
+        "servings": 8,
+        "ingredients": [
+            {
+                "name": "Pepperoni",
+                "quantity": 1,
+                "unit": "slice"
+            },
+            {
+                "name": "Mozzarella",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Tomato Sauce",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Dough",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Cheese",
+                "quantity": 1,
+                "unit": "cup"
+            }
+        ]
+    },
+    {
+        "name": "Hamburger",
+        "id": 2,
+        "image": "https://media.gq.com.mx/photos/5ced746cd09b9ae227169147/16:9/w_2560%2Cc_limit/GettyImages-688974829.jpg",
+        "servings": 1,
+        "ingredients": [
+            {
+                "name": "Ground Beef",
+                "quantity": 1,
+                "unit": "pound"
+            },
+            {
+                "name": "Bun",
+                "quantity": 1,
+                "unit": "each"
+            },
+            {
+                "name": "Cheese",
+                "quantity": 1,
+                "unit": "slice"
+            },
+            {
+                "name": "Lettuce",
+                "quantity": 1,
+                "unit": "leaf"
+            },
+            {
+                "name": "Tomato",
+                "quantity": 1,
+                "unit": "each"
+            },
+            {
+                "name": "Onion",
+                "quantity": 1,
+                "unit": "each"
+            }
+        ]
+    },
+    {
+        "name": "Spaghetti",
+        "id": 3,
+        "image": "https://i0.wp.com/www.onceuponachef.com/images/2019/09/Spaghetti-and-Meatballs.jpg?resize=760%2C984&ssl=1",
+        "servings": 4,
+        "ingredients": [
+            {
+                "name": "Spaghetti",
+                "quantity": 1,
+                "unit": "pound"
+            },
+            {
+                "name": "Ground Beef",
+                "quantity": 1,
+                "unit": "pound"
+            },
+            {
+                "name": "Tomato Sauce",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Cheese",
+                "quantity": 1,
+                "unit": "cup"
+            }
+        ]
+    },
+    {
+        "name": "Lasagna",
+        "id": 4,
+        "image": "https://www.deliciosi.com/images/1500/1519/lasa%C3%B1a-de-carne-mixta.jpg",
+        "servings": 5,
+        "ingredients": [
+            {
+                "name": "Lasagna Noodles",
+                "quantity": 1,
+                "unit": "pound"
+            },
+            {
+                "name": "Ground Beef",
+                "quantity": 1,
+                "unit": "pound"
+            },
+            {
+                "name": "Tomato Sauce",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Cheese",
+                "quantity": 1,
+                "unit": "cup"
+            }
+        ]
+    },
+    {
+        "name": "Fried Chicken",
+        "id": 5,
+        "image": "https://www.blogichef.com/wp-content/uploads/2013/07/kfc-e1669314944483.webp",
+        "servings": 4,
+        "ingredients": [
+            {
+                "name": "Chicken",
+                "quantity": 1,
+                "unit": "pound"
+            },
+            {
+                "name": "Flour",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Egg",
+                "quantity": 1,
+                "unit": "each"
+            },
+            {
+                "name": "Milk",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Oil",
+                "quantity": 1,
+                "unit": "cup"
+            }
+        ]
+    },
+    {
+        "name": "Roast Chicken",
+        "id": 6,
+        "image": "https://static-sevilla.abc.es/media/gurmesevilla/2010/03/pollo-asado-citricos-1920.jpg",
+        "servings": 4,
+        "ingredients": [
+            {
+                "name": "Chicken",
+                "quantity": 1,
+                "unit": "pound"
+            },
+            {
+                "name": "Lemon",
+                "quantity": 1,
+                "unit": "each"
+            },
+            {
+                "name": "Olive Oil",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Garlic",
+                "quantity": 1,
+                "unit": "clove"
+            },
+            {
+                "name": "Rosemary",
+                "quantity": 1,
+                "unit": "sprig"
+            }
+        ]
+    }
+]
