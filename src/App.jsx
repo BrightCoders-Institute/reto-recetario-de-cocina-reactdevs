@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, } from 'react-native';
+import HorizontalList from './components/HorizontalList';
 
 const App = () => {
 
@@ -9,6 +10,7 @@ const App = () => {
         <Text style={styles.title}>
           Recetario de Cocina
         </Text>
+        <HorizontalList/>
       </View>
 
     </>
