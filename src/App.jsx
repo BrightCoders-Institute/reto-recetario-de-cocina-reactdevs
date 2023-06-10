@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, } from 'react-native';
 import HorizontalList from './components/HorizontalList';
+import { HorizontalListTwo } from './components/HorizontalList';
 
 const App = () => {
 
@@ -10,7 +11,10 @@ const App = () => {
         <Text style={styles.title}>
           Recetario de Cocina
         </Text>
+        <Text style={styles.listTitle}>Trending</Text>
         <HorizontalList/>
+        <Text style={styles.listTitle}>Recent</Text>
+        <HorizontalListTwo/>
       </View>
 
     </>
@@ -37,6 +41,11 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
   },
+  listTitle: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: 'black',
+  }
 })
 
 export default App;

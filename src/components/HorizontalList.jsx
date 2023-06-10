@@ -1,47 +1,69 @@
 import React, { useState } from "react";
-import { View, Text, Image, TouchableOpacity  } from "react-native";
-import Carousel from 'react-native-snap-carousel';
+import { View, Text, Image, TouchableOpacity, FlatList } from "react-native";
 import aliments from '../data/aliments.json';
 
 const List = ({ aliment }) => {
-    const [expanded, setExpanded] = useState(false);
-
-    const handlePress = () => {
-      setExpanded(!expanded);
-    };
-
-    return (
-      <TouchableOpacity onPress={handlePress}>
-      <View>
-        <Image source={{uri: aliment.image}} style={{ width: 150, height: 150 }}  />
-        <Text>{aliment.name}</Text>
-        {expanded && (
-          <View >
-            {aliment.ingredients.map((ingredient, index) => (
-              <Text key={index}>
-                {`${ingredient.name}: ${ingredient.quantity} ${ingredient.unit}`}
-              </Text>
-            ))}
-          </View>
-        )}
-      </View>
-      </TouchableOpacity>
-    );
+  return (
+    <View style={styles.itemContainer}>
+      <Image source={{uri: aliment.image}} style={styles.itemImage}  />
+      <Text style={styles.itemText}>{aliment.name}</Text>
+    </View>
+  );
 };
 
 const HorizontalList = () => {
-    return (
-    <View >
-      <Carousel
-        data={aliments}
+  const trendAliments = aliments.filter((aliment) => aliment.status === "trend");
+
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={trendAliments}
         renderItem={({ item }) => <List aliment={item} />}
-        sliderWidth={300}
-        itemWidth={200}
-        layout={'default'}
-        loop
+        keyExtractor={(item) => item.id.toString()}
+        horizontal
       />
     </View>
   );
 };
 
+const HorizontalListTwo = () => {
+  const recentAliments = aliments.filter((aliment) => aliment.status === "recent");
+
+  return (
+    <View style={styles.containertwo}>
+      <FlatList
+        data={recentAliments}
+        renderItem={({ item }) => <List aliment={item} />}
+        keyExtractor={(item) => item.id.toString()}
+        horizontal
+      />
+    </View>
+  );
+};
+
+const styles = {
+  container: {
+    marginBottom: 10,
+  },
+  containertwo: {
+    marginTop: 10,
+  },
+  itemContainer: {
+    alignItems: 'center',
+    marginRight: 40,
+    marginTop: 20,
+  },
+  itemImage: {
+    width: 150,
+    height: 150,
+    borderRadius: 10,
+  },
+  itemText: {
+    marginTop: 5,
+    fontWeight: 'bold',
+    color: 'black',
+  },
+};
+
 export default HorizontalList;
+export { HorizontalListTwo };
