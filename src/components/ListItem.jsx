@@ -1,11 +1,11 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 const ListItem = ({ dish }) => {
     return (
-        <View style={styles.itemContainer}>
+        <TouchableOpacity style={styles.itemContainer}>
           <Image source={{uri: dish.image}} style={styles.itemImage}  />
           <Text style={styles.itemText}>{dish.name}</Text>
-        </View>
+        </TouchableOpacity>
     );
 }
 
