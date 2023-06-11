@@ -1,24 +1,15 @@
-import React, { useState } from "react";
-import { View, Text, Image, TouchableOpacity, FlatList } from "react-native";
-import aliments from '../data/aliments.json';
+import React from 'react';
+import { View, Text, StyleSheet, FlatList } from 'react-native';
+import ListItem from './ListItem';
 
-const List = ({ aliment }) => {
-  return (
-    <View style={styles.itemContainer}>
-      <Image source={{uri: aliment.image}} style={styles.itemImage}  />
-      <Text style={styles.itemText}>{aliment.name}</Text>
-    </View>
-  );
-};
-
-const HorizontalList = () => {
-  const trendAliments = aliments.filter((aliment) => aliment.status === "trend");
-
+const HorizontalList = ({receta}) => {
   return (
     <View style={styles.container}>
+      <Text style={styles.listTitle}>{(receta[0].status.toUpperCase())}</Text>
+
       <FlatList
-        data={trendAliments}
-        renderItem={({ item }) => <List aliment={item} />}
+        data={receta}
+        renderItem={({ item }) => <ListItem dish={ item } />}
         keyExtractor={(item) => item.id.toString()}
         horizontal
       />
@@ -26,44 +17,16 @@ const HorizontalList = () => {
   );
 };
 
-const HorizontalListTwo = () => {
-  const recentAliments = aliments.filter((aliment) => aliment.status === "recent");
-
-  return (
-    <View style={styles.containertwo}>
-      <FlatList
-        data={recentAliments}
-        renderItem={({ item }) => <List aliment={item} />}
-        keyExtractor={(item) => item.id.toString()}
-        horizontal
-      />
-    </View>
-  );
-};
-
-const styles = {
+const styles = StyleSheet.create({
   container: {
     marginBottom: 10,
   },
-  containertwo: {
-    marginTop: 10,
-  },
-  itemContainer: {
-    alignItems: 'center',
-    marginRight: 40,
-    marginTop: 20,
-  },
-  itemImage: {
-    width: 150,
-    height: 150,
-    borderRadius: 10,
-  },
-  itemText: {
-    marginTop: 5,
+  listTitle: {
+    fontSize: 25,
+    marginTop: 25,
     fontWeight: 'bold',
     color: 'black',
-  },
-};
+  }
+});
 
 export default HorizontalList;
-export { HorizontalListTwo };

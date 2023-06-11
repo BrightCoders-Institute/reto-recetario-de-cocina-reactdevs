@@ -4,7 +4,7 @@
         "id": 1,
         "image": "https://images.news18.com/ibnlive/uploads/2021/01/1610716314_untitled-design-2021-01-15t184025.049.jpg?im=FitAndFill,width=1200,height=1200",
         "servings": 8,
-        "status": "trend",
+        "status": "trending",
         "ingredients": [
             {
                 "name": "Pepperoni",
@@ -106,7 +106,7 @@
         "id": 4,
         "image": "https://www.deliciosi.com/images/1500/1519/lasa%C3%B1a-de-carne-mixta.jpg",
         "servings": 5,
-        "status": "trend",
+        "status": "trending",
         "ingredients": [
             {
                 "name": "Lasagna Noodles",
@@ -195,6 +195,104 @@
                 "name": "Rosemary",
                 "quantity": 1,
                 "unit": "sprig"
+            }
+        ]
+    },
+    {
+        "name": "Pollo Asado con Salsa de Melón",
+        "id": 7,
+        "image": "http://images-gmi-pmc.edge-generalmills.com/039676b9-d523-43b7-906d-b9bffd1aee51.jpg",
+        "servings": 4,
+        "status": "trending",
+        "ingredients": [
+            {
+                "qty": "1/4 taza",
+                "name": "de jugo de naranja, recién exprimido"
+            },
+            {
+                "qty": "1/4 taza",
+                "name": "de jugo de lima, recién exprimido"
+            },
+            {
+                "qty": "1 diente",
+                "name": "de ajo grande, picado"
+            },
+            {
+                "qty": "1/2 cucharada",
+                "name": "de comino en polvo"
+            },
+            {
+                "qty": "1 lb",
+                "name": "de pechugas de pollo, sin hueso y sin piel"
+            },
+            {
+                "qty": "2 tazas",
+                "name": "de melón, cortado en pedazos pequeños"
+            },
+            {
+                "qty": "2 ajíes",
+                "name": "serrano grandes, picados finamente"
+            },
+            {
+                "qty": "1/2 taza",
+                "name": "de cebolla blanca, finamente picada"
+            },
+            {
+                "qty": "Sal",
+                "name": "y pimienta, al gusto"
+            },
+            {
+                "qty": "Pimienta",
+                "name": "al gusto"
+            }
+        ]
+    },
+    {
+        "name": "Lomo Saltado",
+        "id": 8,
+        "image": "http://images-gmi-pmc.edge-generalmills.com/64f291cd-4e9c-47ca-af38-cebf1214b177.jpg",
+        "servings": 10,
+        "status": "trending",
+        "ingredients": [
+            {
+                "qty": "4",
+                "name": "papas para hornear medianas (aproximadamente 1 lb)"
+            },
+            {
+                "qty": "1 cucharada",
+                "name": "de aceite vegetal"
+            },
+            {
+                "qty": "1 1/2 libras",
+                "name": "de sirloin de res cortado en rebanadas finas"
+            },
+            {
+                "qty": "1 cebolla",
+                "name": "roja grande, cortada por la mitad, en rebanadas finas"
+            },
+            {
+                "qty": "4",
+                "name": "tomates( jitomates) Roma, cortados en rodajas finas"
+            },
+            {
+                "qty": "1 cucharada",
+                "name": "de salsa de soya"
+            },
+            {
+                "qty": "1 cucharadita",
+                "name": "de vinagre de vino tinto"
+            },
+            {
+                "qty": "Sal",
+                "name": "y pimienta a gusto "
+            },
+            {
+                "qty": "2 cebollas",
+                "name": "de cambray (green onions) medianas, cortadas en trozos pequeños tipo cerilla "
+            },
+            {
+                "qty": "10 tazas",
+                "name": "de arroz cocido caliente"
             }
         ]
     }

@@ -1,25 +1,30 @@
 import { StyleSheet, Text, View, } from 'react-native';
 import HorizontalList from './components/HorizontalList';
-import { HorizontalListTwo } from './components/HorizontalList';
+import data from '../src/data/aliments.json';
+import { useState } from 'react';
 
 const App = () => {
 
-  return (
-    <>
+  const [receipData, setReceipData] = useState(data);
 
+  const trendAliments = data.filter((aliment) => aliment.status === "trending");
+  const recentAliments = data.filter((aliment) => aliment.status === "recent");
+
+  // console.log(trendAliments);
+  // console.log(recentAliments);
+
+  return (
       <View style={styles.container}>
+
         <Text style={styles.title}>
           Recetario de Cocina
         </Text>
-        <Text style={styles.listTitle}>Trending</Text>
-        <HorizontalList/>
-        <Text style={styles.listTitle}>Recent</Text>
-        <HorizontalListTwo/>
+
+        <HorizontalList receta={trendAliments} />
+
+        <HorizontalList receta={recentAliments} />
       </View>
-
-    </>
-
-  )
+  );
 
 }
 
@@ -41,11 +46,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
   },
-  listTitle: {
-    fontSize: 40,
-    fontWeight: 'bold',
-    color: 'black',
-  }
-})
+});
 
 export default App;
