@@ -1,26 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, Image, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal, Button } from 'react-native';
-import data2 from '../data/aliments.json';
+import React, { useState } from 'react';
+import { View, Text, ImageBackground, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal, Dimensions } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
 
     const [receipData, setReceipData] = useState(data);
+    
+    const windowHeight = Dimensions.get('window').height;
+    const imageHeight = windowHeight * 0.50;
 
     return (
         <Modal visible={ visible } animationType='slide'>
-            <View>
-                <View style={styles.imageContainer}>
-                    <Button title='X' onPress={() => setIsModalDetailOpen(false)} />
-                    <Image
-                        style={styles.image}
-                        source={{
-                            uri: receipData.image,
-                        }}
-                    />
-                    <Text>{receipData.status.toUpperCase()}</Text>
-                    <Text>{receipData.name}</Text>
+            <ImageBackground
+                source={{ uri: receipData.image }}
+                style={[styles.backgroundImage, { height: imageHeight }]}
+            >
+                <View style={styles.overlay}>
+                    <View style={styles.iconContainer}>
+                        <Icon name="remove" size={35} color="white" onPress={() => setIsModalDetailOpen(false)}/>
+                    </View>
+                    <View>
+                        <Text style={styles.text}>{receipData.status.toUpperCase()}</Text>
+                        <Text style={[styles.text, {fontWeight: 'bold'}]}>{receipData.name}</Text>
+                    </View>
                 </View>
-                
+            </ImageBackground>
+            <View>                
                 <Text>{`Ingredients\nfor ${receipData.servings} servings`}</Text>
                 <FlatList 
                     data={receipData.ingredients}
@@ -39,14 +44,30 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
 }
 
 const styles = StyleSheet.create({
-    imageContainer: {
-        // backgroundColor: 'red',
+    container: {
+        flex: 1,
     },
-    image: {
-        width: '100%',
-        height: '50%',
-        opacity: .5,
-        backgroundColor: 'black',
+    backgroundImage: {
+        resizeMode: 'cover',
+        // opacity: .5,
+    },
+    overlay: {
+        flex: 1,
+        justifyContent: 'space-between',
+        alignItems: 'flex-start',
+        paddingBottom: 40,
+        paddingLeft: 25,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    iconContainer: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 20,
+    },
+    text: {
+        fontSize: 22,
+        color: 'white',
     },
 });
 
