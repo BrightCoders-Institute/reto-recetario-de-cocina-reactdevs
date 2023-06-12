@@ -206,44 +206,54 @@
         "status": "trending",
         "ingredients": [
             {
-                "qty": "1/4 taza",
-                "name": "de jugo de naranja, recién exprimido"
+                "quantity": "1/4",
+                "name": "jugo de naranja",
+                "unit": "taza"
             },
             {
-                "qty": "1/4 taza",
-                "name": "de jugo de lima, recién exprimido"
+                "quantity": "1/4 taza",
+                "name": "jugo de limón",
+                "unit": "taza"
             },
             {
-                "qty": "1 diente",
-                "name": "de ajo grande, picado"
+                "quantity": "1",
+                "name": "ajo grande",
+                "unit": "diente"
             },
             {
-                "qty": "1/2 cucharada",
-                "name": "de comino en polvo"
+                "quantity": "1/2",
+                "name": "comino en polvo",
+                "unit": "cucharada"
             },
             {
-                "qty": "1 lb",
-                "name": "de pechugas de pollo, sin hueso y sin piel"
+                "quantity": "1",
+                "name": "pechugas de pollo",
+                "unit": "lb"
             },
             {
-                "qty": "2 tazas",
-                "name": "de melón, cortado en pedazos pequeños"
+                "quantity": "2",
+                "name": "melón en trozos",
+                "unit": "tazas"
             },
             {
-                "qty": "2 ajíes",
-                "name": "serrano grandes, picados finamente"
+                "quantity": "2",
+                "name": "chile serrano",
+                "unit": "pz"
             },
             {
-                "qty": "1/2 taza",
-                "name": "de cebolla blanca, finamente picada"
+                "quantity": "1/2",
+                "name": "cebolla blanca",
+                "unit": "taza"
             },
             {
-                "qty": "Sal",
-                "name": "y pimienta, al gusto"
+                "quantity": "1",
+                "name": "Sal ",
+                "unit": "cucharada"
             },
             {
-                "qty": "Pimienta",
-                "name": "al gusto"
+                "quantity": "1",
+                "name": "pimienta",
+                "unit": "cucharada"
             }
         ]
     },
@@ -255,44 +265,54 @@
         "status": "trending",
         "ingredients": [
             {
-                "qty": "4",
-                "name": "papas para hornear medianas (aproximadamente 1 lb)"
+                "quantity": "4",
+                "name": "papas para hornear",
+                "unit": "pz"
             },
             {
-                "qty": "1 cucharada",
-                "name": "de aceite vegetal"
+                "quantity": "1",
+                "name": "aceite vegetal",
+                "unit": "cucharada"
             },
             {
-                "qty": "1 1/2 libras",
-                "name": "de sirloin de res cortado en rebanadas finas"
+                "quantity": "1 1/2",
+                "name": "sirloin de res",
+                "unit": "lb"
             },
             {
-                "qty": "1 cebolla",
-                "name": "roja grande, cortada por la mitad, en rebanadas finas"
+                "quantity": "1",
+                "name": "cebolla roja",
+                "unit": "pz"
             },
             {
-                "qty": "4",
-                "name": "tomates( jitomates) Roma, cortados en rodajas finas"
+                "quantity": "4",
+                "name": "jitomates",
+                "unit": "pz"
             },
             {
-                "qty": "1 cucharada",
-                "name": "de salsa de soya"
+                "quantity": "1",
+                "name": "salsa de soya",
+                "unit": "cucharada"
             },
             {
-                "qty": "1 cucharadita",
-                "name": "de vinagre de vino tinto"
+                "quantity": "1",
+                "name": "vinagre de vino tinto",
+                "unit": "cucharadita"
             },
             {
-                "qty": "Sal",
-                "name": "y pimienta a gusto "
+                "quantity": "1",
+                "name": "Sal y pimienta",
+                "unit": "cucharada"
             },
             {
-                "qty": "2 cebollas",
-                "name": "de cambray (green onions) medianas, cortadas en trozos pequeños tipo cerilla "
+                "quantity": "2",
+                "name": "cebolla cambray",
+                "unit": "pz"
             },
             {
-                "qty": "10 tazas",
-                "name": "de arroz cocido caliente"
+                "quantity": "10",
+                "name": "arroz cocido caliente",
+                "unit": "tazas"
             }
         ]
     }

@@ -1,22 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal } from 'react-native';
-import data from '../data/aliments.json';
+import { View, Text, Image, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal, Button } from 'react-native';
+import data2 from '../data/aliments.json';
 
-const ModalDetails = ({ visible }) => {
+const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
 
-    const [receipData, setReceipData] = useState(data[0]);
+    const [receipData, setReceipData] = useState(data);
 
     return (
         <Modal visible={ visible } animationType='slide'>
             <View>
-                <Image
-                    style={styles.image}
-                    source={{
-                        uri: receipData.image,
-                    }}
-                />
-                <Text>{receipData.category}</Text>
-                <Text>{receipData.name}</Text>
+                <View style={styles.imageContainer}>
+                    <Button title='X' onPress={() => setIsModalDetailOpen(false)} />
+                    <Image
+                        style={styles.image}
+                        source={{
+                            uri: receipData.image,
+                        }}
+                    />
+                    <Text>{receipData.status.toUpperCase()}</Text>
+                    <Text>{receipData.name}</Text>
+                </View>
+                
                 <Text>{`Ingredients\nfor ${receipData.servings} servings`}</Text>
                 <FlatList 
                     data={receipData.ingredients}
@@ -35,10 +39,14 @@ const ModalDetails = ({ visible }) => {
 }
 
 const styles = StyleSheet.create({
+    imageContainer: {
+        // backgroundColor: 'red',
+    },
     image: {
-        width: 158,
-        height: 180,
-        borderRadius: 10
+        width: '100%',
+        height: '50%',
+        opacity: .5,
+        backgroundColor: 'black',
     },
 });
 

@@ -10,7 +10,7 @@ const ListItem = ({ dish }) => {
 
   return (
       <TouchableOpacity style={styles.itemContainer} onPress={() => setIsModalDetailOpen(true)}>
-        <ModalDetails visible={isModalDetailOpen} />
+        <ModalDetails visible={isModalDetailOpen} setIsModalDetailOpen={setIsModalDetailOpen} data={dish} />
         <Image source={{uri: dish.image}} style={styles.itemImage}  />
         <Text style={styles.itemText}>{dish.name}</Text>
       </TouchableOpacity>
