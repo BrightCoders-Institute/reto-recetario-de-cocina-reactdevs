@@ -11,7 +11,7 @@ function SearchBar() {
         <TextInput
           style={styles.searchInput}
           placeholderTextColor="black"
-          placeholder="What do you want eat?"
+          placeholder="What do you want to eat?"
         />
       </View>   
       <FontAwesomeIcon icon={faMicrophone} name="microphone" size={20} color="black"/>
