@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, } from 'react-native';
 import HorizontalList from './components/HorizontalList';
 import data from '../src/data/aliments.json';
 import { useState } from 'react';
+import SearchBar from './components/SearchBar';
 
 const App = () => {
 
@@ -15,13 +16,8 @@ const App = () => {
 
   return (
       <View style={styles.container}>
-
-        <Text style={styles.title}>
-          Recetario de Cocina
-        </Text>
-
+        <SearchBar/>
         <HorizontalList receta={trendAliments} />
-
         <HorizontalList receta={recentAliments} />
       </View>
   );
