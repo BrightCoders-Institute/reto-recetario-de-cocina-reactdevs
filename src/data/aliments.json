@@ -199,9 +199,9 @@
         ]
     },
     {
-        "name": "Pollo Asado con Salsa de Melón",
+        "name": "Pollo Asado de Melón",
         "id": 7,
-        "image": "http://images-gmi-pmc.edge-generalmills.com/039676b9-d523-43b7-906d-b9bffd1aee51.jpg",
+        "image": "https://images-gmi-pmc.edge-generalmills.com/ea67c56e-fe4c-44ab-9941-6affea4bac1a.jpg",
         "servings": 4,
         "status": "trending",
         "ingredients": [
@@ -260,7 +260,7 @@
     {
         "name": "Lomo Saltado",
         "id": 8,
-        "image": "http://images-gmi-pmc.edge-generalmills.com/64f291cd-4e9c-47ca-af38-cebf1214b177.jpg",
+        "image": "https://i.blogs.es/5620ff/lomo-saltado-dap/1366_2000.jpg",
         "servings": 10,
         "status": "trending",
         "ingredients": [

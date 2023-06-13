@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { View, Text, ImageBackground, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal, Dimensions, Pressable } from 'react-native';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faRemove} from '@fortawesome/free-solid-svg-icons';
+import {faRemove, faHeart} from '@fortawesome/free-solid-svg-icons';
 
 const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
 
     const [receipData, setReceipData] = useState(data);
+    const [isLiked, setIsLiked] = useState(false);
     
     const windowHeight = Dimensions.get('window').height;
     const imageHeight = windowHeight * 0.50;
@@ -28,6 +29,16 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
                         <Text style={styles.imageText}>{receipData.status.toUpperCase()}</Text>
                         <Text style={[styles.imageText, {fontWeight: 'bold'}]}>{receipData.name}</Text>
                     </View>
+                        <Pressable
+                            style={styles.likeButton}  
+                            onPress={() => setIsLiked(!isLiked)}
+                        >
+                            <FontAwesomeIcon 
+                                icon={faHeart} 
+                                size={24}
+                                color={isLiked ? "red" : "white"}  
+                            /> 
+                        </Pressable>
                 </View>
             </ImageBackground>
             
@@ -88,6 +99,14 @@ const styles = StyleSheet.create({
         marginBottom: 15,
         fontSize: 18
     },
+    likeButton: {
+        position: 'absolute',  
+        top: 20,
+        right: 20,  
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        padding: 8,
+        borderRadius: 50
+      }
 });
 
 export default ModalDetails;
