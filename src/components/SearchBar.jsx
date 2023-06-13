@@ -21,15 +21,21 @@ function SearchBar() {
 
 const styles = StyleSheet.create({
     container: {
+      marginTop: 20,
+      paddingLeft: 10,
+      paddingRight: 10, 
+      borderWidth: 2,
+      borderColor: '#20232a',
+      borderRadius: 2,
       flexDirection: "row",
       justifyContent: 'space-between',
       alignItems: "center",
-      backgroundColor: 'pink',
+      backgroundColor: 'white',
+      textAlign: 'left',
+      fontSize: 12,
       borderRadius: 30,
-      marginHorizontal: 45,
       paddingHorizontal:10,
       paddingVertical:5,
-      marginTop:55,
     },
     searchContainer: {
       flexDirection: 'row'
