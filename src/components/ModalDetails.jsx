@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, ImageBackground, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal, Dimensions } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { View, Text, ImageBackground, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal, Dimensions, Pressable } from 'react-native';
+// import Icon from 'react-native-vector-icons/FontAwesome';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {faRemove} from '@fortawesome/free-solid-svg-icons';
 
 const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
 
@@ -17,7 +19,10 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
             >
                 <View style={styles.overlay}>
                     <View style={styles.iconContainer}>
-                        <Icon name="remove" size={35} color="white" onPress={() => setIsModalDetailOpen(false)}/>
+                        {/* <Icon name="remove" size={35} color="white" onPress={() => setIsModalDetailOpen(false)}/> */}
+                        <Pressable onPress={() => setIsModalDetailOpen(false)}>
+                            <FontAwesomeIcon size={35} icon={faRemove} color='white'  />
+                        </Pressable>
                     </View>
                     <View>
                         <Text style={styles.imageText}>{receipData.status.toUpperCase()}</Text>
@@ -30,7 +35,7 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
                 <Text style={styles.textContent}>{`Ingredients\nfor ${receipData.servings} servings`}</Text>
                 <ScrollView >
                     { receipData.ingredients.map((item) => (
-                        <View style={styles.ingredients} id={item.name}>
+                        <View style={styles.ingredients} id={item.name} key={item.name}>
                             <Text style={{fontSize: 15}}>{item.name}</Text>
                             <Text style={{fontSize: 15}}>{`${item.quantity} ${item.unit}`}</Text>
                         </View>
