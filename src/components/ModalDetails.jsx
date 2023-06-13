@@ -20,24 +20,22 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
                         <Icon name="remove" size={35} color="white" onPress={() => setIsModalDetailOpen(false)}/>
                     </View>
                     <View>
-                        <Text style={styles.text}>{receipData.status.toUpperCase()}</Text>
-                        <Text style={[styles.text, {fontWeight: 'bold'}]}>{receipData.name}</Text>
+                        <Text style={styles.imageText}>{receipData.status.toUpperCase()}</Text>
+                        <Text style={[styles.imageText, {fontWeight: 'bold'}]}>{receipData.name}</Text>
                     </View>
                 </View>
             </ImageBackground>
-            <View>                
-                <Text>{`Ingredients\nfor ${receipData.servings} servings`}</Text>
-                <FlatList 
-                    data={receipData.ingredients}
-                    renderItem={({ item }) => (
-                        <ScrollView>
-                            <View>
-                                <Text>{item.name}</Text>
-                                <Text>{`${item.quantity} ${item.unit}`}</Text>
-                            </View>
-                        </ScrollView>
-                    )}
-                />
+            
+            <View style={{ marginBottom: 500 }}>
+                <Text style={styles.textContent}>{`Ingredients\nfor ${receipData.servings} servings`}</Text>
+                <ScrollView >
+                    { receipData.ingredients.map((item) => (
+                        <View style={styles.ingredients} id={item.name}>
+                            <Text style={{fontSize: 15}}>{item.name}</Text>
+                            <Text style={{fontSize: 15}}>{`${item.quantity} ${item.unit}`}</Text>
+                        </View>
+                    ))}
+                </ScrollView>
             </View>
         </Modal>
     );
@@ -65,9 +63,25 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingTop: 20,
     },
-    text: {
+    imageText: {
         fontSize: 22,
         color: 'white',
+    },
+
+    ingredients: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        margin: 20,
+        height: 50,
+        borderBottomWidth: 1,
+        borderBottomColor: 'rgba(0, 0, 0, 0.2)',
+    },
+    textContent: {
+        marginLeft: 20,
+        marginTop: 15,
+        marginBottom: 15,
+        fontSize: 18
     },
 });
 
