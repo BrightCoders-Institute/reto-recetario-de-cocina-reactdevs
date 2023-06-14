@@ -7,14 +7,14 @@ function SearchBar() {
   return (
   <SafeAreaView style={styles.container}>
       <View style={styles.searchContainer}>
-        <FontAwesomeIcon icon={faMagnifyingGlass} style={styles.lupa} name="search" size={15} color="black"/>
+        <FontAwesomeIcon icon={faMagnifyingGlass} style={styles.lupa} name="search" size={15} color="white"/>
         <TextInput
           style={styles.searchInput}
-          placeholderTextColor="black"
+          placeholderTextColor="white"
           placeholder="What do you want to eat?"
         />
       </View>   
-      <FontAwesomeIcon icon={faMicrophone} name="microphone" size={20} color="black"/>
+      <FontAwesomeIcon icon={faMicrophone} name="microphone" size={20} color="white"/>
   </SafeAreaView>
   );
 };
@@ -30,10 +30,10 @@ const styles = StyleSheet.create({
       flexDirection: "row",
       justifyContent: 'space-between',
       alignItems: "center",
-      backgroundColor: 'white',
+      backgroundColor: '#413F3F',
       textAlign: 'left',
       fontSize: 12,
-      borderRadius: 30,
+      borderRadius: 10,
       paddingHorizontal:10,
       paddingVertical:5,
     },
