@@ -17,8 +17,8 @@ const App = () => {
   return (
       <View style={styles.container}>
         <SearchBar/>
-        <HorizontalList receta={trendAliments} />
-        <HorizontalList receta={recentAliments} />
+        <HorizontalList receta={trendAliments} dimensions={{width: 160, height: 160 }} />
+        <HorizontalList receta={recentAliments} dimensions={{width: 190, height: 240 }} />
       </View>
   );
 
