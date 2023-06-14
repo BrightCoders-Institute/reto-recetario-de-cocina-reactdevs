@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     },
     backgroundImage: {
         resizeMode: 'cover',
-        // opacity: .5,
+        opacity: .8,
     },
     overlay: {
         flex: 1,
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingTop: 20,
+        paddingTop: 30,
     },
     imageText: {
         fontSize: 22,
@@ -101,11 +101,9 @@ const styles = StyleSheet.create({
     },
     likeButton: {
         position: 'absolute',  
-        top: 20,
+        top: 30,
         right: 20,  
-        backgroundColor: 'rgba(0,0,0,0.5)',
         padding: 8,
-        borderRadius: 50
       }
 });
 

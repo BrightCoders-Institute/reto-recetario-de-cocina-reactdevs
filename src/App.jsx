@@ -11,13 +11,10 @@ const App = () => {
   const trendAliments = data.filter((aliment) => aliment.status === "trending");
   const recentAliments = data.filter((aliment) => aliment.status === "recent");
 
-  // console.log(trendAliments);
-  // console.log(recentAliments);
-
   return (
       <View style={styles.container}>
         <SearchBar/>
-        <HorizontalList receta={trendAliments} dimensions={{width: 160, height: 160 }} />
+        <HorizontalList receta={trendAliments} dimensions={{width: 140, height: 140 }} />
         <HorizontalList receta={recentAliments} dimensions={{width: 190, height: 240 }} />
       </View>
   );
@@ -27,8 +24,8 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 24,
-    backgroundColor: '#201F1F',
+    padding: 18,
+    backgroundColor: '#413F3F',
   },
   title: {
     marginTop: 16,

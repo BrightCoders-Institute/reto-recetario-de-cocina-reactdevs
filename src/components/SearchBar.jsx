@@ -25,23 +25,23 @@ const styles = StyleSheet.create({
       paddingLeft: 10,
       paddingRight: 10, 
       borderWidth: 2,
-      borderColor: '#20232a',
+      borderColor: '#585555',
       borderRadius: 2,
       flexDirection: "row",
       justifyContent: 'space-between',
       alignItems: "center",
-      backgroundColor: '#413F3F',
+      backgroundColor: '#585555',
       textAlign: 'left',
       fontSize: 12,
       borderRadius: 10,
-      paddingHorizontal:10,
-      paddingVertical:5,
+      paddingHorizontal: 20,
+      paddingVertical: 7,
     },
     searchContainer: {
       flexDirection: 'row'
     },
     searchInput: {
-      color: "black",
+      color: "white",
       paddingLeft: 10,
     },
     lupa:{
