@@ -42,13 +42,13 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
                 </View>
             </ImageBackground>
             
-            <View style={{ marginBottom: 500 }}>
+            <View style={styles.textContainer}>
                 <Text style={styles.textContent}>{`Ingredients\nfor ${receipData.servings} servings`}</Text>
                 <ScrollView >
                     { receipData.ingredients.map((item) => (
                         <View style={styles.ingredients} id={item.name} key={item.name}>
-                            <Text style={{fontSize: 15}}>{item.name}</Text>
-                            <Text style={{fontSize: 15}}>{`${item.quantity} ${item.unit}`}</Text>
+                            <Text style={{fontSize: 15, color: 'white'}}>{item.name}</Text>
+                            <Text style={{fontSize: 15, color: 'white'}}>{`${item.quantity} ${item.unit}`}</Text>
                         </View>
                     ))}
                 </ScrollView>
@@ -83,28 +83,32 @@ const styles = StyleSheet.create({
         fontSize: 22,
         color: 'white',
     },
-
     ingredients: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
         margin: 20,
         height: 50,
-        borderBottomWidth: 1,
-        borderBottomColor: 'rgba(0, 0, 0, 0.2)',
+        borderBottomWidth: .5,
+        borderBottomColor: 'gray',
+    },
+    textContainer: {
+        marginBottom: 500, 
+        backgroundColor: '#413F3F'
     },
     textContent: {
         marginLeft: 20,
         marginTop: 15,
         marginBottom: 15,
-        fontSize: 18
+        fontSize: 18,
+        color: 'white'
     },
     likeButton: {
         position: 'absolute',  
         top: 30,
         right: 20,  
         padding: 8,
-      }
+    }
 });
 
 export default ModalDetails;
