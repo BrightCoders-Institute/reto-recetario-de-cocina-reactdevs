@@ -4,6 +4,7 @@
         "id": 1,
         "image": "https://images.news18.com/ibnlive/uploads/2021/01/1610716314_untitled-design-2021-01-15t184025.049.jpg?im=FitAndFill,width=1200,height=1200",
         "servings": 8,
+        "status": "trending",
         "ingredients": [
             {
                 "name": "Pepperoni",
@@ -37,6 +38,7 @@
         "id": 2,
         "image": "https://media.gq.com.mx/photos/5ced746cd09b9ae227169147/16:9/w_2560%2Cc_limit/GettyImages-688974829.jpg",
         "servings": 1,
+        "status": "recent",
         "ingredients": [
             {
                 "name": "Ground Beef",
@@ -75,6 +77,7 @@
         "id": 3,
         "image": "https://i0.wp.com/www.onceuponachef.com/images/2019/09/Spaghetti-and-Meatballs.jpg?resize=760%2C984&ssl=1",
         "servings": 4,
+        "status": "recent",
         "ingredients": [
             {
                 "name": "Spaghetti",
@@ -103,6 +106,7 @@
         "id": 4,
         "image": "https://www.deliciosi.com/images/1500/1519/lasa%C3%B1a-de-carne-mixta.jpg",
         "servings": 5,
+        "status": "trending",
         "ingredients": [
             {
                 "name": "Lasagna Noodles",
@@ -131,6 +135,7 @@
         "id": 5,
         "image": "https://www.blogichef.com/wp-content/uploads/2013/07/kfc-e1669314944483.webp",
         "servings": 4,
+        "status": "recent",
         "ingredients": [
             {
                 "name": "Chicken",
@@ -164,6 +169,7 @@
         "id": 6,
         "image": "https://static-sevilla.abc.es/media/gurmesevilla/2010/03/pollo-asado-citricos-1920.jpg",
         "servings": 4,
+        "status": "recent",
         "ingredients": [
             {
                 "name": "Chicken",
@@ -189,6 +195,124 @@
                 "name": "Rosemary",
                 "quantity": 1,
                 "unit": "sprig"
+            }
+        ]
+    },
+    {
+        "name": "Pollo al Melón",
+        "id": 7,
+        "image": "https://images-gmi-pmc.edge-generalmills.com/ea67c56e-fe4c-44ab-9941-6affea4bac1a.jpg",
+        "servings": 4,
+        "status": "trending",
+        "ingredients": [
+            {
+                "quantity": "1/4",
+                "name": "jugo de naranja",
+                "unit": "taza"
+            },
+            {
+                "quantity": "1/4 taza",
+                "name": "jugo de limón",
+                "unit": "taza"
+            },
+            {
+                "quantity": "1",
+                "name": "ajo grande",
+                "unit": "diente"
+            },
+            {
+                "quantity": "1/2",
+                "name": "comino en polvo",
+                "unit": "cucharada"
+            },
+            {
+                "quantity": "1",
+                "name": "pechugas de pollo",
+                "unit": "lb"
+            },
+            {
+                "quantity": "2",
+                "name": "melón en trozos",
+                "unit": "tazas"
+            },
+            {
+                "quantity": "2",
+                "name": "chile serrano",
+                "unit": "pz"
+            },
+            {
+                "quantity": "1/2",
+                "name": "cebolla blanca",
+                "unit": "taza"
+            },
+            {
+                "quantity": "1",
+                "name": "Sal ",
+                "unit": "cucharada"
+            },
+            {
+                "quantity": "1",
+                "name": "pimienta",
+                "unit": "cucharada"
+            }
+        ]
+    },
+    {
+        "name": "Lomo Saltado",
+        "id": 8,
+        "image": "https://i.blogs.es/5620ff/lomo-saltado-dap/1366_2000.jpg",
+        "servings": 10,
+        "status": "trending",
+        "ingredients": [
+            {
+                "quantity": "4",
+                "name": "papas para hornear",
+                "unit": "pz"
+            },
+            {
+                "quantity": "1",
+                "name": "aceite vegetal",
+                "unit": "cucharada"
+            },
+            {
+                "quantity": "1 1/2",
+                "name": "sirloin de res",
+                "unit": "lb"
+            },
+            {
+                "quantity": "1",
+                "name": "cebolla roja",
+                "unit": "pz"
+            },
+            {
+                "quantity": "4",
+                "name": "jitomates",
+                "unit": "pz"
+            },
+            {
+                "quantity": "1",
+                "name": "salsa de soya",
+                "unit": "cucharada"
+            },
+            {
+                "quantity": "1",
+                "name": "vinagre de vino tinto",
+                "unit": "cucharadita"
+            },
+            {
+                "quantity": "1",
+                "name": "Sal y pimienta",
+                "unit": "cucharada"
+            },
+            {
+                "quantity": "2",
+                "name": "cebolla cambray",
+                "unit": "pz"
+            },
+            {
+                "quantity": "10",
+                "name": "arroz cocido caliente",
+                "unit": "tazas"
             }
         ]
     }
