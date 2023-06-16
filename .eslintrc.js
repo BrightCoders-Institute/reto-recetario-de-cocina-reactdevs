@@ -1,18 +1,7 @@
 module.exports = {
-  "env": {
-    "commonjs": true,
-    "es2021": true,
-    "node": true,
-    "jest": true
+  root: true,
+  extends: '@react-native-community',
+  rules: {
+    'prettier/prettier': 0,
   },
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "rules": {
-    "semi": ["error", "always"],
-    "quotes": ["error", "double"],
-    "no-console": "off"
-  }
 };
