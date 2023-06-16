@@ -22,8 +22,8 @@ function SearchBar() {
 const styles = StyleSheet.create({
     container: {
       marginTop: 20,
-      paddingLeft: (Platform.OS === 'ios') ? 10 : 20,
-      paddingRight: (Platform.OS === 'ios') ? 10 : 20,
+      // paddingLeft: (Platform.OS === 'ios') ? 10 : 20,
+      // paddingRight: (Platform.OS === 'ios') ? 10 : 20,
       borderWidth: 2,
       borderColor: '#4f4d4d',
       borderRadius: 2,
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
       textAlign: 'left',
       fontSize: 12,
       borderRadius: 10,
-      paddingVertical:(Platform.OS === 'ios') ? 5 : 0,
+      // paddingVertical:(Platform.OS === 'ios') ? 5 : 0,
     },
     searchContainer: {
       flexDirection: 'row'
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
       paddingLeft: 10,
     },
     lupa:{
-      paddingTop: (Platform.OS === 'ios') ? 5 : 47,
+      // paddingTop: (Platform.OS === 'ios') ? 5 : 47,
     },
   });
 
