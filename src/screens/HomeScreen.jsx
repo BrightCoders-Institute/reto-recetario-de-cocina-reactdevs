@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, } from 'react-native';
-import HorizontalList from '../components/HorizontalList';
-import data from '.././data/aliments.json';
+import { StyleSheet, View } from "react-native";
+import HorizontalList from "../components/HorizontalList";
+import data from ".././data/aliments.json";
 import { useState } from 'react';
-import SearchBar from '../components/SearchBar';
+import SearchBar from "../components/SearchBar";
 
 const HomeScreen = () => {
 

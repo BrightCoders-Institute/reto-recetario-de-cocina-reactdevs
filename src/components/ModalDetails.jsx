@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ImageBackground, TouchableOpacity, FlatList, StyleSheet, ScrollView, Modal, Dimensions, Pressable } from 'react-native';
-// import Icon from 'react-native-vector-icons/FontAwesome';
+import { View, Text, ImageBackground, StyleSheet, ScrollView, Modal, Dimensions, Pressable } from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faRemove, faHeart} from '@fortawesome/free-solid-svg-icons';
 
@@ -10,7 +9,7 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
     const [isLiked, setIsLiked] = useState(false);
     
     const windowHeight = Dimensions.get('window').height;
-    const imageHeight = windowHeight * 0.50;
+    const imageHeight = windowHeight * 0.5;
 
     return (
         <Modal visible={ visible } animationType='slide'>
@@ -20,7 +19,6 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
             >
                 <View style={styles.overlay}>
                     <View style={styles.iconContainer}>
-                        {/* <Icon name="remove" size={35} color="white" onPress={() => setIsModalDetailOpen(false)}/> */}
                         <Pressable onPress={() => setIsModalDetailOpen(false)}>
                             <FontAwesomeIcon size={35} icon={faRemove} color='white'  />
                         </Pressable>

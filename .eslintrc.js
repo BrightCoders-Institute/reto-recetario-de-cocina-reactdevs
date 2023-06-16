@@ -1,7 +1,20 @@
 module.exports = {
   root: true,
-  extends: '@react-native-community',
+  plugins: ["prettier"],
+  extends: [
+    "eslint:recommended",
+    "@react-native-community",
+    "plugin:prettier/recommended",
+    "prettier",
+  ],
   rules: {
-    'prettier/prettier': 0,
+    "no-console": "error",
+    "unicorn/no-array-reduce": "off",
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      { ignores: ["modules"] },
+    ],
   },
 };
