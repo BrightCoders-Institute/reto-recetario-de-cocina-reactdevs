@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
       paddingLeft: (Platform.OS === 'ios') ? 10 : 20,
       paddingRight: (Platform.OS === 'ios') ? 10 : 20,
       borderWidth: 2,
-      borderColor: '#20232a',
+      borderColor: '#4f4d4d',
       borderRadius: 2,
       flexDirection: "row",
       justifyContent: 'space-between',
