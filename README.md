@@ -1,4 +1,4 @@
-# App recetario de cocina
+# 🧑‍🍳 App recetario de cocina
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 ![BrightCoders Logo](img/logo.png)
@@ -7,12 +7,12 @@
 
 ## Tabla de contenidos
 
-## Descripción del proyecto
+## 💻 Descripción del proyecto
 La empresa Foo Corp necesita una App para poder visualizar las recetas de cocina de sus restaurantes. La App deberá cumplir con los siguientes requerimientos:
 
 Pantalla principal Listado con las recetas que están de moda (trending) Listado con las recetas más recientes Por cada receta se debe mostrar una foto del platillo de la receta y el nombre de la receta Pantalla detalle Foto del platillo de la receta Categoría de la receta (trending/recent) Nombre de la receta Porciones por receta (servings) Listado de ingredientes con nombre y cantidad Botón "me gusta" que servirá para etiquetar a las recetas favoritas.
 
-##Como instalar y correr el proyecto
+## 📂 Como instalar y correr el proyecto
 
 El primer paso y el mas importante es clonar el repositiorio remoto para correrlo de forma local.
 
@@ -30,6 +30,13 @@ Para ejecutar el funcionamiento principal del programa, se debe ejecutar el sigu
 ```
 npx react-native start
 ```
+
+## ⚒️ Tecnologías utilizadas
+- JavaScript
+- React Native
+- ESLint 
+- Jest 
+- Codacy
 
 ## Créditos
 
