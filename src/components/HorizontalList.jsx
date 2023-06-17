@@ -4,7 +4,7 @@ import ListItem from './ListItem';
 
 const HorizontalList = ({ receta, dimensions }) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID='horizontalList'>
       <Text style={styles.listTitle}>{(receta[0].status.toUpperCase())}</Text>
 
       <FlatList

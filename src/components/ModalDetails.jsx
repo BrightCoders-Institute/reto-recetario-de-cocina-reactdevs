@@ -12,15 +12,15 @@ const ModalDetails = ({ visible, setIsModalDetailOpen, data }) => {
     const imageHeight = windowHeight * 0.5;
 
     return (
-        <Modal visible={ visible } animationType='slide'>
+        <Modal visible={ visible } animationType='slide' testID='modalDetails'>
             <ImageBackground
                 source={{ uri: receipData.image }}
                 style={[styles.backgroundImage, { height: imageHeight }]}
             >
                 <View style={styles.overlay}>
                     <View style={styles.iconContainer}>
-                        <Pressable onPress={() => setIsModalDetailOpen(false)}>
-                            <FontAwesomeIcon size={35} icon={faRemove} color='white'  />
+                        <Pressable onPress={() => setIsModalDetailOpen(false)} testID='closeButton'>
+                            <FontAwesomeIcon size={35} icon={faRemove} color='white' />
                         </Pressable>
                     </View>
                     <View>

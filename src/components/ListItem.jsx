@@ -7,16 +7,16 @@ const ListItem = ({ dish, dimensions }) => {
   const [isModalDetailOpen, setIsModalDetailOpen] = useState(false);
 
   return (
-      <TouchableOpacity style={styles.itemContainer} onPress={() => setIsModalDetailOpen(true)}>
+      <TouchableOpacity style={styles.itemContainer} onPress={() => setIsModalDetailOpen(true)} testID='listItem'>
         <ModalDetails
           visible={isModalDetailOpen} 
           setIsModalDetailOpen={setIsModalDetailOpen} 
           data={dish} 
         />
 
-        <Image source={{uri: dish.image}} style={[styles.itemImage, dimensions]}  />
+        <Image source={{uri: dish.image}} style={[styles.itemImage, dimensions]} testID='itemImage'/>
 
-        <Text style={styles.itemText}>{dish.name}</Text>
+        <Text style={styles.itemText} testID='itemText'>{dish.name}</Text>
       </TouchableOpacity>
   );
 }

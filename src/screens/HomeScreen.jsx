@@ -12,7 +12,7 @@ const HomeScreen = () => {
   const recentAliments = data.filter((aliment) => aliment.status === "recent");
 
   return (
-      <View style={styles.container}>
+      <View style={styles.container} testID='homeScreen'>
         <SearchBar/>
         <HorizontalList receta={trendAliments} dimensions={{width: 140, height: 140 }} />
         <HorizontalList receta={recentAliments} dimensions={{width: 190, height: 240 }} />
