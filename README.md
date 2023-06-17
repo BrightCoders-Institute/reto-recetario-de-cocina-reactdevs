@@ -31,6 +31,7 @@ Para ejecutar el funcionamiento principal del programa, se debe ejecutar el sigu
 npx react-native start
 ```
 
+
 ## ⚒️ Tecnologías utilizadas
 - JavaScript
 - React Native
