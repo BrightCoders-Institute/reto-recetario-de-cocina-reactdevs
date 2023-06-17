@@ -23,7 +23,6 @@ const ListItem = ({ dish, dimensions }) => {
 
 const styles = StyleSheet.create({
     itemContainer: {
-      // alignItems: 'center',
       marginRight: 20,
       marginTop: 20,
     },
