@@ -32,13 +32,15 @@ function SearchBar() {
 const styles = StyleSheet.create({
     container: {
       marginTop: 20,
+      paddingLeft: (Platform.OS === 'ios') ? 10 : 20,
+      paddingRight: (Platform.OS === 'ios') ? 10 : 20,
       borderWidth: 2,
       borderColor: '#4f4d4d',
       borderRadius: 2,
       flexDirection: "row",
       justifyContent: 'space-between',
       alignItems: "center",
-      backgroundColor: '#4f4d4d',
+      backgroundColor: '#413F3F',
       textAlign: 'left',
       fontSize: 12,
       borderRadius: 10,
@@ -49,6 +51,9 @@ const styles = StyleSheet.create({
     searchInput: {
       color: "black",
       paddingLeft: 10,
+    },
+    lupa:{
+      paddingTop: (Platform.OS === 'ios') ? 5 : 47,
     },
   });
 
