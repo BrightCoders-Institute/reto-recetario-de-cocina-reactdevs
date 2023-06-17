@@ -1,5 +1,5 @@
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import ModalDetails from './ModalDetails';
+import { Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import ModalDetails from '../components/ModalDetails';
 import { useState } from 'react';
 
 const ListItem = ({ dish, dimensions }) => {

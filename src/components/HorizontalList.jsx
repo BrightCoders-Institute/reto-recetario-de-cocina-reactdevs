@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { View, Text, StyleSheet, FlatList } from "react-native";
 import ListItem from './ListItem';
 
 const HorizontalList = ({ receta, dimensions }) => {
@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     marginTop: 25,
     fontWeight: 'bold',
     color: '#d71f73',
-  }
+  },
 });
+
 
 export default HorizontalList;
