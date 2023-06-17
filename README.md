@@ -46,4 +46,5 @@ npx react-native start
 ## Badges
 | Analizador | Calificación|
 | ----- | ---- |
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f67723e996e544c4853acfac2b945328)](https://app.codacy.com/gh/BrightCoders-Institute/reto-recetario-de-cocina-reactdevs?utm_source=github.com&utm_medium=referral&utm_content=BrightCoders-Institute/reto-recetario-de-cocina-reactdevs&utm_campaign=Badge_Grade)
 | Codacy | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/b0b743ab11c846e5a4cb6a83aee76dbc)](https://app.codacy.com/gh/BrightCoders-Institute/reto-recetario-de-cocina-reactdevs/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) |
