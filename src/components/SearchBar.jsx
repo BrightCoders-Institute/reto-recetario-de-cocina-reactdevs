@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, StyleSheet, TextInput } from 'react-native';
+import { SafeAreaView, View, StyleSheet, TextInput, Platform } from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faMicrophone,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 
